@@ -21,3 +21,11 @@ Add a like element, as "Likes: 0", number in red colour
 #3 Project 3
 Change all elements into div elements, but keep current format
 Divide "Title: Minecraft" and all similar elements into two elements "Title:" and "Minecraft". Keep them inline
+
+
+#Project 4
+Create a js file called home.js
+Link html to that js file
+Inside the js file, create a variable holding the like count
+Likes = 5
+When html loads, load the variable and read the amount of likes, so that "Likes: 0" becomes "Likes: 5"
