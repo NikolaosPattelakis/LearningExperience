@@ -5,7 +5,7 @@
 <script src="home.js"></script>
 </head>
 
-<body>
+<body onload="getLikes();getPlayers()">
 <div class="textbold">
     <div class="textborder">
         <h1>Title: <span div class="normaltext">Minecraft</span> </h1>
@@ -23,15 +23,14 @@
     </div>
 
     <ul>
-        <li>Yiokas</li>
-        <li>Giaprakas</li>
-        <li>Lomedil</li>
+        <li id="playername1"></li>
+        <li id="playername2"></li>
+        <li id="playername3"></li>
     </ul>
 
 
     <h4>Likes: <span div class="textred" id="likenumber">?</span></h4></div>
-    <p id="likenumber">hi</p>
-    <script src="home.js"></script>
+    <button div class=button1 type="button" onclick="getLikes()">Like!</button>
 </div>
 
 </body>
