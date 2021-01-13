@@ -1,0 +1,44 @@
+body
+{
+    background-color:lightcyan;
+}    
+
+h1
+{
+    font-style:oblique;
+    border:2px solid;
+}
+
+h2
+{
+    font-style:oblique;
+    border:2px solid;
+}
+
+h3
+{
+    font-style:oblique;
+    border:2px solid;
+}
+
+h4
+{
+    font-style:oblique;
+    display:inline;
+}
+
+h5
+{
+    font-style:oblique;
+    color:red;
+    display:inline;
+}
+
+h6
+{
+    font-style:oblique;
+}
+
+li:nth-child(odd) {color: lightgray}
+li:nth-child(even) {color: lightblue}
+
