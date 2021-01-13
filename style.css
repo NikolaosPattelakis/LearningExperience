@@ -1,44 +1,28 @@
 body
 {
-    background-color:lightcyan;
+    background-color:lightcyan
 }    
 
-h1
+.textbold
 {
-    font-style:oblique;
-    border:2px solid;
+    font-style:oblique
 }
 
-h2
+.normaltext
 {
-    font-style:oblique;
-    border:2px solid;
+    font-size: 20px;
+    font-style:normal
 }
 
-h3
-{
-    font-style:oblique;
-    border:2px solid;
+.textborder
+{   
+    border:2px solid
 }
 
-h4
+.textred
 {
-    font-style:oblique;
-    display:inline;
-}
-
-h5
-{
-    font-style:oblique;
-    color:red;
-    display:inline;
-}
-
-h6
-{
-    font-style:oblique;
+    color:red
 }
 
 li:nth-child(odd) {color: lightgray}
 li:nth-child(even) {color: lightblue}
-
