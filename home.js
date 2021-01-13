@@ -1,30 +1,30 @@
+var Likes = 5;
+
+window.onload = function(){getLikes(),getPlayers()};
+
 function getLikes()
-{
-    var Likes = addLikes();
-    document.getElementById("likenumber").innerHTML = Likes++;
+{    
+    document.getElementById("likenumber").innerHTML = Likes;
 }
 
-function addLikes()
+function addLike()
 {
-    if (StorageEvent.clickcount) {
-        StorageEvent.clickcount = Number(StorageEvent.clickcount)+1;
-      } else {
-        StorageEvent.clickcount = 1;
-      }
-    a = 4 + StorageEvent.clickcount;
-    return a;
+    Likes++;
+    getLikes();
 }
-    
+   
 function getPlayers()
 {
-    var Players = [
+    let Players = [
         "Gioka",
         "Giaprakas",
         "Lomedil"
         ];
     
-    document.getElementById("playername1").innerHTML = Players[0];
-    document.getElementById("playername2").innerHTML = Players[1];
-    document.getElementById("playername3").innerHTML = Players[2];
+    for (let i=0;i<Players.length;i++)
+    {
+        let player = document.createElement("li");
+        player.innerHTML = Players[i];
+        document.getElementById("playerlist").appendChild(player);
+    }
 }
-      

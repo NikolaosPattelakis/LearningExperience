@@ -2,10 +2,11 @@
 <head>
 <title> Minecraft </title>
 <link rel="stylesheet" href="style.css">
-<script src="home.js"></script>
+<script type = "text/javascript" src="home.js"></script>
 </head>
 
-<body onload="getLikes();getPlayers()">
+<body>
+
 <div class="textbold">
     <div class="textborder">
         <h1>Title: <span div class="normaltext">Minecraft</span> </h1>
@@ -22,15 +23,12 @@
         <h2> Players: </h3>
     </div>
 
-    <ul>
-        <li id="playername1"></li>
-        <li id="playername2"></li>
-        <li id="playername3"></li>
+    <ul id="playerlist">
     </ul>
 
 
     <h4>Likes: <span div class="textred" id="likenumber">?</span></h4></div>
-    <button div class=button1 type="button" onclick="getLikes()">Like!</button>
+    <button id="likebutton" div class=button1 type="button" onclick="addLike()">Like!</button>
 </div>
 
 </body>
