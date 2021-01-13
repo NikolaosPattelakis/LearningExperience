@@ -17,3 +17,7 @@ Add border to each element
 Add border to image
 Add different colours in list (even light blue, odd, light gray)
 Add a like element, as "Likes: 0", number in red colour
+
+#3 Project 3
+Change all elements into div elements, but keep current format
+Divide "Title: Minecraft" and all similar elements into two elements "Title:" and "Minecraft". Keep them inline
