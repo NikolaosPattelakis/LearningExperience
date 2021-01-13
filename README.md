@@ -29,3 +29,8 @@ Link html to that js file
 Inside the js file, create a variable holding the like count
 Likes = 5
 When html loads, load the variable and read the amount of likes, so that "Likes: 0" becomes "Likes: 5"
+
+#Project 5
+Add an array with the names of the players
+Remove the list of players from html and generate that list from home.js
+Customize the "Likes:" element to handle clicks, when pressed it should increase the likes on the page by 1 each time.
