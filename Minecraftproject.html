@@ -9,10 +9,13 @@
 
 <div class="textbold">
     <div class="textborder">
-        <h1>Title: <span div class="normaltext">Minecraft</span> </h1>
+        Enter a Title: <input type="text" onchange="titleChange(this)">
+        <p></p>
+        <h1>Title: <span div class="normaltext" id="changetitle">Minecraft</span> </h1> 
+        <!-- onmouseover="this.innerHTML = 'Page Title!'" inside h1 -->
     </div>
 
-    <img src="trixel-isometric-music-minecraft-wallpaper.jpg" alt="Trixel-isometric" style= "width:500px;height:300px;border:5px solid">
+    <img id="image" src="trixel-isometric-music-minecraft-wallpaper.jpg" alt="Trixel-isometric" style= "width:500px;height:300px;border:5px solid">
 
     <div class="textborder">
         <h2>Server: <span div class="normaltext">YiokTakNik</span></h2>
@@ -23,12 +26,32 @@
         <h2> Players: </h3>
     </div>
 
+<!-- Player List -->
     <ul id="playerlist">
     </ul>
 
-
+<!-- Likes -->
     <h4>Likes: <span div class="textred" id="likenumber">?</span></h4></div>
-    <button id="likebutton" div class=button1 type="button" onclick="addLike()">Like!</button>
+    <button div class=button1 type="button" onmousedown="addLike(this)" onmouseup="mOut(this)">Like!</button>
+</div>
+
+<p><button onclick="stylechange()">Change style!</button></p>
+<!-- Change image -->
+<p>-- Change image section --</p>
+<button type="button" onclick="changeimage()">Change the Image!</button>
+
+<!-- New paragraph -->
+<p>-- New paragraph section --</p>
+<button onclick="newP()">Click to add new Paragraphs!</button>
+<button onclick="removeP()">Click to remove all Paragraphs!</button>
+<text id="showparagraphs"></text>
+    <div id="textplace"></div>
+
+<!-- Animation -->
+<p>-- Animation section -- </p>
+<button onclick="myMove()">Click Me</button>
+<div id = "container">
+    <div id="animate"></div>
 </div>
 
 </body>

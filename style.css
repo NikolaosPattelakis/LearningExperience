@@ -32,13 +32,30 @@ body
     color:cornsilk
 }
 
-.button1:active {
+.button1:active
+{
     background: brown;
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-            box-shadow: inset 0px 0px 5px #c1c1c1;
-     outline: black;
-  }
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: black;
+}
 
 li:nth-child(odd) {color: lightgray}
 li:nth-child(even) {color: lightblue}
+
+#container
+{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+}
+
+#animate
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: red;
+}
