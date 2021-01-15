@@ -24,16 +24,16 @@ function mOut(obj)
    
 function getPlayers()
 {
-    let Players = [
+    let players = [
         "Gioka",
         "Giaprakas",
         "Lomedil"
         ];
     
-    for (let i=0;i<Players.length;i++)
+    for (let i=0;i<players.length;i++)
     {
         let player = document.createElement("li");
-        player.innerHTML = Players[i];
+        player.innerHTML = players[i];
         document.getElementById("playerlist").appendChild(player);
     }
 }
@@ -99,5 +99,21 @@ function removeP()
 function showP()
 {
     var myNodelist = document.querySelectorAll("p");
-    document.getElementById("showparagraphs").innerHTML = "This document contains " +  (myNodelist.length-5) + " paragraphs.";
+    document.getElementById("showparagraphs").innerHTML = `This document contains ${myNodelist.length - 5} paragraphs.`;
+}
+
+function zoomIn(imgs)
+{
+    let imgsh = imgs.clientHeight;
+    let imgsw = imgs.clientWidth;
+    imgs.style.height = (imgsh + 200) + "px";
+    imgs.style.width = (imgsw + 200 ) + "px";
+}
+
+function zoomOut(imgs)
+{
+    let imgsh = imgs.clientHeight;
+    let imgsw = imgs.clientWidth;
+    imgs.style.height = (imgsh - 200) + "px";
+    imgs.style.width = (imgsw - 200 ) + "px";
 }

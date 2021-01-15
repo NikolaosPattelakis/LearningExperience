@@ -1,0 +1,139 @@
+body
+{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.toppage
+{
+    position:-webkit-sticky;
+    position: sticky;
+    top: 2;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 20px;
+    background-color: darkslategray;
+    z-index:11;
+    float: left;
+    align-content: center;
+}
+
+.emptyspace
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#titletext
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row
+{
+    width: 99%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+}
+
+.column
+{
+    margin: 5px;
+    padding: 10px;
+    float: left;
+}
+
+.left
+{
+    flex: 20%;
+}
+
+.right
+{
+    flex: 75%;
+}
+
+.image-container
+{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: 20px;
+}
+
+#image_slider li
+{
+    padding: 5px;
+    max-width: 100%;
+    float: left;
+    list-style: none;
+}
+
+/*
+.column img
+{
+    width: 320px;
+    height: auto;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover
+{
+    opacity: 1;
+}
+*/
+
+.toppage .login-container
+{
+    padding: 20px;
+    margin-right: 20px;
+    float: right;
+    overflow: hidden;
+}
+
+.toppage input[type=text]
+{
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 12px;
+    border: none;
+    width: 100px;
+}
+
+.toppage input[type=password]
+{
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 12px;
+    border: none;
+    width: 100px;
+}
+
+.toppage .login-container button
+{
+    display: flex;
+    align-items: flex-end;
+    float: right;
+    width: 80px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: rgb(174, 218, 170);
+    color: white;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.toppage .login-container button:hover
+{
+    background-color: rgb(99, 221, 88);
+}

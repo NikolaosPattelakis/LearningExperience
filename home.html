@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Not an official page</title>
+    <!-- add icon -->
+    <link rel = "icon" href="https://static.planetminecraft.com/files/resource_media/screenshot/1350/Minecraft_GrassBlock_6810023_lrg.jpg" type = "image/x-icon;">
+     <!-- link css and js -->
+    <link rel="stylesheet" href="home.css">
+    <script type = "text/javascript" src="home.js"></script>
+</head>
+
+<body>
+    <div class="toppage">
+        <img id="logoimage" src="mclogo.png" alt="Minecraft logo" style= "width:280px;height:120px;box-shadow: black;">
+        <div class=login-container>
+            <form>
+                <input type="text" placeholder="Username" name="user">
+                <input type="password" placeholder="Password" name="Password">
+                <button type="submit">Login</button>
+                <text style="color: white;"> | </text>
+                <button type="submit">Register</button>
+            </form>
+        </div>  
+    </div>
+
+    <div class=emptyspace></div>
+
+    <div class="row">
+        <div class="column left">
+            <p>Server Status: <span style= "color:green; font-weight: bold;">ONLINE</span></p>
+            <p>Active Players: </p>
+            <ul id="playerlist"></ul>
+        </div>
+
+        <div class="column right">
+            <h1 id="titletext">The sandbox game where <span style= "text-shadow: black;font-size: larger;">YOU</span> are the bad guy!</h1>
+        </div>
+    </div>
+
+    <hr>
+    <div class=emptyspace></div>
+
+    <div class="image-container">
+        <ul id="image_slider">
+            <li><img src="image1.jpg" style="width:320px;height:200px;" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"></li>
+            <li><img src="image2.jpg" style="width:320px;height:200px;" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"></li>
+            <li><img src="image3.jpg" style="width:320px;height:200px;" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"></li>
+            <li><img src="image4.jpg" style="width:320px;height:200px;" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"></li>
+            <li><img src="image5.jpg" style="width:320px;height:200px;" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"></li>
+        </ul>
+    </div>
+
+</body>
+
+
+</html>
