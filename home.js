@@ -1,6 +1,20 @@
 var Likes = 5;
 
-window.onload = function(){getLikes(),getPlayers(),showP()};
+var images = ["image1.jpg", "image2.jpg","image3.jpg","image4.jpg","image5.jpg", ];
+
+//window.onload = function(){getLikes(),getPlayers(),showP()};
+
+window.setInterval(rotateImages, 5000);
+
+function rotateImages()
+{
+    images.unshift(images.pop());
+    
+    for(let i=0; i<5; i++){
+        document.getElementsByClassName("image")[i].src = images[i];
+        console.log(document.getElementsByClassName("image")[i].src);
+    }
+}
 
 function getLikes()
 {    
