@@ -52,3 +52,8 @@ it should display a login form, with:
 The password field should hide the inserted text.  
 Two buttons should be underneath, Login and Register  
 Note: Login doesnt need to have functionality at this point in time!  
+  
+#Project 8  
+Implement login & register  
+If login credentials dont match, alert user  
+If login credentials match, alert user and hide the login form, show a "Welcome: 'User'" element instead  
