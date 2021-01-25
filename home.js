@@ -17,8 +17,12 @@ function rotateImages()
 }
 
 function getLikes()
-{    
-    document.getElementById("likenumber").innerHTML = Likes;
+{
+    if(document.body.contains(document.getElementById('likenumber')))
+    {
+        document.getElementById("likenumber").innerHTML = Likes;
+    }
+
 }
 
 function addLike(obj)

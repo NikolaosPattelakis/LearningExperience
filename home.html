@@ -6,19 +6,24 @@
      <!-- link css and js -->
     <link rel="stylesheet" href="home.css">
     <script type = "text/javascript" src="home.js"></script>
+    <script defer src="login-page.js"></script>
 </head>
 
 <body>
     <div class="toppage">
         <img id="logoimage" src="mclogo.png" alt="Minecraft logo" style= "width:280px;height:120px;box-shadow: black;">
         <div class=login-container>
-            <form>
-                <input type="text" placeholder="Username" name="user">
-                <input type="password" placeholder="Password" name="Password">
-                <button type="submit">Login</button>
+
+            <form id="login-form">
+                <input type="text" name="username" placeholder="Username" name="user">
+                <input type="password" name="password" placeholder="Password" name="pass">
+                <button type="submit" value="Login" id="login-form-submit">Login</button>
                 <text style="color: white;"> | </text>
                 <button type="submit">Register</button>
             </form>
+            <div>
+                <p id="login-error-msg" style="opacity: 0; color:red;">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
         </div>  
     </div>
 
@@ -48,8 +53,6 @@
             <li><img class="image" src="image5.jpg" style="width:320px;height:200px;" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"></li>
         </ul>
     </div>
-
-</body>
 
 
 </html>
